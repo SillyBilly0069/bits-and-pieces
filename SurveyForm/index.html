@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">
+            Name
+        </label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">
+            Email
+        </label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">
+            Age (optional)
+        </label>
+        <input type="number" id="number" min="10" max="99" placeholder="Age">
+
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" class="form-control">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+            <input type="radio" class="input-radio" name="recommendation-radio" value="definitely"> Definitely
+        </label>
+
+        <label>
+            <input type="radio" class="input-radio" name="recommendation-radio" value="maybe"> Maybe
+        </label>
+
+        <label>
+            <input type="radio" class="input-radio" name="recommendation-radio" value="not sure"> Not sure
+        </label>
+
+        <p class="favorite-feature">What is your favorite feature of freeCodeCamp?</p>
+        <select id="dropdown" class="form-control">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+        </select>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="1"> Front-end Projects
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Back-end Projects
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Data Visualization
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Challenges
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Open Source Community
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Gitter help rooms
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Videos
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> City Meetups
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Wiki
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" class="input-checkbox" value="2"> Forum
+        </label>
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="2"> Additional Courses
+        </label>
+
+        <p class="suggestions-paragraph">Any comments or suggestions?</p>
+        <textarea class="input-textarea" placeholder="Enter your comment here..."></textarea>
+
+        <input type="submit" class="submit-button" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>
